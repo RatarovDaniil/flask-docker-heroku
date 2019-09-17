@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Docker + Flask on Heroku</title>
+    </head>
+    <body>
+    	<h1>Docker + Flask on Heroku</h1>
+        <h3>Server Side Events:</h3>
+        <div id="target_div"></div>
+        <script>
+      		var targetContainer = document.getElementById("target_div");
+			var eventSource = new EventSource("/stream")
+			  eventSource.onmessage = function(e) {
+			  targetContainer.innerHTML = e.data;
+			};
+    	</script>
+    </body>
+</html>
