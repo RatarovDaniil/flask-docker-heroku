@@ -9,6 +9,7 @@ It's a small guide about how to deploy flask app inside Docker container on Hero
 1. ```sudo systemctl start docker```
 2. ```sudo systemctl enable docker```
 
+### Deploying existing application:
 * Login to Heroku container registry:
 1. ```sudo heroku container:login```
 * From folder with Dockerfile run:
